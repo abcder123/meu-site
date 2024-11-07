@@ -1,0 +1,121 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #c8e3ff;
+    color: #343a40;
+    text-align: center;
+}
+
+header {
+    background: #085a97;
+    padding: 10px 0;
+    text-align: center;
+    color: white;
+}
+
+.logo img {
+    max-width: 150px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    color: #f0a500;
+}
+
+section#doacoes,
+section.doacoes {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+h3 {
+    color: black;
+}
+
+.container-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: nowrap;
+}
+
+.card {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 250px;
+}
+
+.card h2 {
+    color: #085a97;
+    margin-bottom: 10px;
+}
+
+.card .valor {
+    font-size: 1.4em;
+    color: #343a40;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.card .descricao {
+    margin-bottom: 15px;
+    font-size: 0.9em;
+    color: #555;
+}
+
+.card img {
+    display: block;
+    margin: 0 auto 10px; /* Centraliza e adiciona margem inferior */
+    width: 100%;
+    max-width: 150px; /* Tamanho consistente para todos os QR codes */
+}
+
+.card p {
+    margin: 5px 0;
+}
+
+footer {
+    background: #ffffff;
+    color: #000000;
+    text-align: center;
+    padding: 20px;
+}
+
+footer a {
+    color: #085a97;
+    text-decoration: none;
+}
+
+/* Responsivo para telas menores */
+@media (max-width: 768px) {
+    .container-cards {
+        flex-wrap: wrap;
+    }
+}
